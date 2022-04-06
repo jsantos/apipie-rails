@@ -9,6 +9,9 @@
 Note: Up until and including v0.6.x, apipie-rails was silently ignoring allow_blank == false on String validation.
 when allow_blank is not specified, it default to false. to allow blank strings, you must specify it as a parameter.
 
+Also deleted the `Gemfile` that was now a broken symlink.
+please use `export BUNDLE_GEMFILE='gemfiles/Gemfile.rails61'; bundle exec rspec` to run the test suite
+
 ## [v0.7.0](https://github.com/Apipie/apipie-rails/tree/v0.7.0) (2022-03-30)
 [Full Changelog](https://github.com/Apipie/apipie-rails/compare/v0.6.0...v0.7.0)
 * ArgumentError (invalid byte sequence in UTF-8) [#746](https://github.com/Apipie/apipie-rails/pull/746) (David Milanese)
